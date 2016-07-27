@@ -1,0 +1,27 @@
+SpringMVC实现国际化与图片验证码
+
+1.SpringMVC实现国际化
+i18n
+
+Spring通过实现MessageSource接口,来支持国家化
+ResourceBundleMessageSource是一个常用的实现
+LocaleResolver常用的三个实现类
+1.AcceptHeaderLocaleResolver
+2.CookieLocaleResovler
+3.SessionLocaleResolver
+国际化配置
+message.zh.properties
+message.en.properties
+
+在spring中加入相关的配置文件
+新建一个Filter类,获取当前的Locale
+
+在web.xml中配置Filter
+在jsp页面中引用国际化资源文件
+<spring:message code=""/>
+ 
+ SpringMVC数据校验
+ JSR303校验
+ 
+ Hibernate Validator校验及注解类
+ 
